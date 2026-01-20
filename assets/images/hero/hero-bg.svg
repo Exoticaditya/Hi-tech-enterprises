@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <!-- Hero Background - Modern Industrial Pattern -->
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f3c;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2c5aa0" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#heroGrad)"/>
+  <rect width="1200" height="600" fill="url(#grid)"/>
+  
+  <!-- Geometric Shapes -->
+  <circle cx="100" cy="100" r="80" fill="#e8501c" opacity="0.1"/>
+  <circle cx="1100" cy="500" r="120" fill="#2ecc71" opacity="0.1"/>
+  <rect x="900" y="50" width="150" height="150" fill="#3498db" opacity="0.1" transform="rotate(45 975 125)"/>
+  
+  <!-- Abstract Packaging Elements -->
+  <g opacity="0.15">
+    <!-- Conveyor Belt Pattern -->
+    <rect x="0" y="450" width="1200" height="8" fill="#34495e"/>
+    <rect x="0" y="470" width="1200" height="8" fill="#34495e"/>
+    
+    <!-- Product Flow Lines -->
+    <path d="M 0 300 Q 300 250 600 300 T 1200 300" stroke="#e8501c" stroke-width="3" fill="none" opacity="0.5"/>
+    <path d="M 0 350 Q 300 300 600 350 T 1200 350" stroke="#3498db" stroke-width="3" fill="none" opacity="0.5"/>
+  </g>
+  
+  <!-- Tech Elements -->
+  <g opacity="0.2">
+    <circle cx="200" cy="200" r="3" fill="#fff"/>
+    <circle cx="500" cy="150" r="3" fill="#fff"/>
+    <circle cx="800" cy="250" r="3" fill="#fff"/>
+    <circle cx="1000" cy="180" r="3" fill="#fff"/>
+    
+    <line x1="200" y1="200" x2="500" y2="150" stroke="#fff" stroke-width="1"/>
+    <line x1="500" y1="150" x2="800" y2="250" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="250" x2="1000" y2="180" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

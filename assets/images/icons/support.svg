@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Support Icon -->
+  <circle cx="32" cy="32" r="30" fill="#1a3a6b" opacity="0.1"/>
+  
+  <!-- Headset -->
+  <path d="M 16 28 Q 16 16 32 16 Q 48 16 48 28 L 48 36 L 44 36 L 44 28" stroke="#e8501c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 16 28 L 16 36 L 20 36 L 20 28" stroke="#e8501c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Ear Pieces -->
+  <rect x="12" y="28" width="8" height="12" rx="2" fill="#3498db"/>
+  <rect x="44" y="28" width="8" height="12" rx="2" fill="#3498db"/>
+  
+  <!-- Microphone -->
+  <path d="M 16 36 Q 16 44 24 46" stroke="#2ecc71" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="24" cy="46" r="2" fill="#2ecc71"/>
+</svg>

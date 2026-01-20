@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Quality Icon -->
+  <circle cx="32" cy="32" r="30" fill="#1a3a6b" opacity="0.1"/>
+  <circle cx="32" cy="32" r="24" stroke="#e8501c" stroke-width="2" fill="none"/>
+  
+  <!-- Checkmark -->
+  <path d="M 20 32 L 28 40 L 44 24" stroke="#2ecc71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Stars -->
+  <path d="M 32 12 L 34 18 L 40 18 L 35 22 L 37 28 L 32 24 L 27 28 L 29 22 L 24 18 L 30 18 Z" fill="#f39c12"/>
+</svg>

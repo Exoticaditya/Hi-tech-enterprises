@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <!-- HT-030 Automatic Liquid & Paste Packaging Machine -->
+  
+  <!-- Base -->
+  <rect x="50" y="420" width="300" height="60" fill="#2c3e50" rx="5"/>
+  <rect x="70" y="440" width="260" height="20" fill="#34495e" rx="3"/>
+  
+  <!-- Main Body -->
+  <rect x="80" y="250" width="240" height="170" fill="#16a085" rx="8"/>
+  <rect x="90" y="260" width="220" height="150" fill="#1abc9c" rx="5"/>
+  
+  <!-- Control Panel -->
+  <rect x="100" y="270" width="80" height="60" fill="#1a3a6b" rx="4"/>
+  <circle cx="120" cy="295" r="8" fill="#2ecc71"/>
+  <circle cx="145" cy="295" r="8" fill="#e74c3c"/>
+  <circle cx="165" cy="295" r="8" fill="#f39c12"/>
+  <rect x="110" y="315" width="60" height="8" fill="#ecf0f1" rx="2"/>
+  
+  <!-- Display Screen -->
+  <rect x="200" y="275" width="100" height="50" fill="#34495e" rx="3"/>
+  <rect x="205" y="280" width="90" height="40" fill="#3498db" rx="2"/>
+  <line x1="215" y1="290" x2="285" y2="290" stroke="#ecf0f1" stroke-width="2"/>
+  <line x1="215" y1="300" x2="270" y2="300" stroke="#ecf0f1" stroke-width="2"/>
+  <line x1="215" y1="310" x2="280" y2="310" stroke="#ecf0f1" stroke-width="2"/>
+  
+  <!-- Liquid Tank -->
+  <rect x="140" y="120" width="120" height="100" fill="#3498db" rx="6" opacity="0.3"/>
+  <rect x="145" y="125" width="110" height="90" fill="#5dade2" rx="4" opacity="0.5"/>
+  
+  <!-- Tank Top -->
+  <ellipse cx="200" cy="120" rx="60" ry="15" fill="#2980b9"/>
+  
+  <!-- Liquid Level Indicator -->
+  <rect x="150" y="145" width="100" height="60" fill="#3498db" opacity="0.6"/>
+  <path d="M 150 170 Q 175 165 200 170 T 250 170" stroke="#2980b9" stroke-width="2" fill="none"/>
+  <path d="M 150 190 Q 175 185 200 190 T 250 190" stroke="#2980b9" stroke-width="2" fill="none"/>
+  
+  <!-- Filling Nozzles -->
+  <rect x="185" y="220" width="10" height="30" fill="#95a5a6" rx="2"/>
+  <rect x="205" y="220" width="10" height="30" fill="#95a5a6" rx="2"/>
+  <circle cx="190" cy="250" r="4" fill="#7f8c8d"/>
+  <circle cx="210" cy="250" r="4" fill="#7f8c8d"/>
+  
+  <!-- Pump/Motor -->
+  <circle cx="280" cy="170" r="20" fill="#e74c3c"/>
+  <circle cx="280" cy="170" r="12" fill="#c0392b"/>
+  <rect x="275" y="185" width="10" height="15" fill="#95a5a6"/>
+  
+  <!-- Sealing Jaws -->
+  <rect x="120" y="340" width="15" height="70" fill="#e74c3c" rx="3"/>
+  <rect x="265" y="340" width="15" height="70" fill="#e74c3c" rx="3"/>
+  
+  <!-- Film Roll -->
+  <circle cx="320" cy="180" r="25" fill="#34495e"/>
+  <circle cx="320" cy="180" r="20" fill="#ecf0f1"/>
+  <circle cx="320" cy="180" r="5" fill="#95a5a6"/>
+  
+  <!-- Liquid Flow -->
+  <circle cx="190" cy="260" r="6" fill="#3498db" opacity="0.7"/>
+  <circle cx="210" cy="265" r="6" fill="#3498db" opacity="0.7"/>
+  <circle cx="190" cy="275" r="6" fill="#3498db" opacity="0.7"/>
+  <circle cx="210" cy="280" r="6" fill="#3498db" opacity="0.7"/>
+  
+  <!-- Output Chute -->
+  <path d="M 140 410 L 160 380 L 240 380 L 260 410 Z" fill="#95a5a6" stroke="#7f8c8d" stroke-width="2"/>
+  
+  <!-- Pouch Sample -->
+  <rect x="170" y="385" width="60" height="20" fill="#fff" stroke="#2c3e50" stroke-width="1" rx="2"/>
+  <rect x="175" y="390" width="50" height="10" fill="#3498db" opacity="0.3" rx="1"/>
+  <text x="200" y="398" font-family="Arial" font-size="8" fill="#2c3e50" text-anchor="middle">LIQUID</text>
+  
+  <!-- Logo Area -->
+  <text x="200" y="465" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#16a085" text-anchor="middle">HT-030</text>
+  
+  <!-- Pipes -->
+  <rect x="265" y="140" width="8" height="50" fill="#7f8c8d" rx="2"/>
+  <rect x="268" y="145" width="2" height="40" fill="#95a5a6"/>
+  
+  <!-- Technical Details Indicators -->
+  <circle cx="90" cy="350" r="3" fill="#2ecc71"/>
+  <circle cx="90" cy="365" r="3" fill="#2ecc71"/>
+  <circle cx="90" cy="380" r="3" fill="#2ecc71"/>
+  
+  <!-- Side Panels -->
+  <rect x="85" y="255" width="5" height="160" fill="#138d75" opacity="0.5"/>
+  <rect x="310" y="255" width="5" height="160" fill="#138d75" opacity="0.5"/>
+  
+  <!-- Valve Indicators -->
+  <circle cx="275" cy="155" r="5" fill="#e74c3c"/>
+  <circle cx="275" cy="175" r="5" fill="#2ecc71"/>
+</svg>
