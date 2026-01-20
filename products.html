@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Hi-Tech Enterprises automatic form-fill-seal packaging machines. Model HT-020 for powders & granules, HT-030 for liquids & paste. High-quality industrial packaging equipment.">
+    <meta name="keywords"
+        content="packaging machines, HT-020, HT-030, form fill seal machines, automatic packaging equipment, pouch packaging machines, granule packing, liquid packing, Hi-Tech Enterprises products">
+    <meta name="author" content="Hi-Tech Enterprises">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Products - Hi-Tech Enterprises Packaging Machines">
+    <meta property="og:description"
+        content="Browse our range of automatic form-fill-seal packaging machines for various industries.">
+    <meta property="og:image" content="assets/WhatsApp Image 2026-01-20 at 12.02.24 PM.jpeg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hi-tech-enterprises.com/products.html">
+
+    <title>Products | Automatic Packaging Machines | Hi-Tech Enterprises</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/logo.JPG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Products Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Hi-Tech Enterprises Packaging Machines",
+        "description": "Automatic form-fill-seal packaging machines for various industries",
+        "numberOfItems": 2,
+        "itemListElement": [
+            {
+                "@type": "Product",
+                "position": 1,
+                "name": "Model HT-020 - Automatic Quantization Filling & Packaging Machine",
+                "description": "Convex integrated automatic quantization filling and sealing machine for powders, chips, granules, tablets, and pharmaceutical products",
+                "sku": "HT-020",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Hi-Tech Enterprises"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "INR"
+                }
+            },
+            {
+                "@type": "Product",
+                "position": 2,
+                "name": "Model HT-030 - Automatic Liquid & Paste Packaging Machine",
+                "description": "Convex integrated automatic quantization machine for measuring, bag making, filling and sealing for liquids, paste, ketchup, shampoo, and milk products",
+                "sku": "HT-030",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Hi-Tech Enterprises"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "INR"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* Products Page Specific Styles */
+        .products-page-grid {
+            display: grid;
+            gap: var(--spacing-xl);
+        }
+
+        .product-detail-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            padding: var(--spacing-lg);
+            align-items: center;
+        }
+
+        .product-detail-card:nth-child(even) .product-detail-image {
+            order: 2;
+        }
+
+        .product-detail-card:nth-child(even) .product-detail-content {
+            order: 1;
+        }
+
+        .product-detail-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .product-detail-image img {
+            width: 100%;
+            height: auto;
+            transition: var(--transition-slow);
+        }
+
+        .product-detail-card:hover .product-detail-image img {
+            transform: scale(1.05);
+        }
+
+        .product-model-badge {
+            display: inline-block;
+            background: var(--gradient-accent);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-xl);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .product-detail-title {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-dark);
+        }
+
+        .product-description {
+            color: #6c757d;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-md) 0;
+        }
+
+        .specs-table tr {
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .specs-table td {
+            padding: var(--spacing-sm);
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--primary-blue);
+            width: 40%;
+        }
+
+        .product-applications {
+            background: var(--light-gray);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .product-applications h4 {
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-dark);
+        }
+
+        .applications-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+
+        .applications-list span {
+            background: var(--white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            color: var(--dark-gray);
+            border: 1px solid var(--medium-gray);
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-card {
+                grid-template-columns: 1fr;
+            }
+
+            .product-detail-card:nth-child(even) .product-detail-image,
+            .product-detail-card:nth-child(even) .product-detail-content {
+                order: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-overlay"></div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.JPG" alt="Hi-Tech Enterprises Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Products</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Products Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Packaging Excellence</span>
+                <h2 class="section-title">Automatic Form-Fill-Seal Machines</h2>
+                <p class="section-subtitle">New generation technology in pouch packaging with photoelectric control for
+                    various industries including food, pharmaceuticals, cosmetics, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products List -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="products-page-grid">
+
+                <!-- Product 1: HT-020 -->
+                <article class="product-detail-card fade-in" id="ht-020" itemscope
+                    itemtype="https://schema.org/Product">
+                    <div class="product-detail-image">
+                        <img src="assets/WhatsApp Image 2026-01-20 at 12.02.24 PM.jpeg"
+                            alt="Hi-Tech HT-020 Automatic Quantization Filling and Packaging Machine" itemprop="image"
+                            loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <span class="product-model-badge" itemprop="sku">Model HT-020</span>
+                        <h2 class="product-detail-title" itemprop="name">Automatic Quantization Filling & Packaging
+                            Machine</h2>
+                        <p class="product-description" itemprop="description">
+                            Convex integrated fully automatic quantization filling and sealing packaging machine.
+                            Conducts integrated operations for measuring, bag making, filling & cutting to packaging
+                            with a photocell control system for accurate web registration.
+                        </p>
+
+                        <table class="specs-table">
+                            <tbody>
+                                <tr>
+                                    <td>Sealing Type</td>
+                                    <td>3 Side Sealing / 4 Side Sealing / Center Sealing (On Request)</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Size</td>
+                                    <td>L: 40-120mm or 100-240mm (Film Length) × W: 20-16mm or 20-220mm (Film Width)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Range</td>
+                                    <td>0.5-30gm, 50-100gm, 100-300gm (Depending on Material Gravity)</td>
+                                </tr>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>60-120 Bag/Min, 45-90 Bag/Min (Depending on Flow Rate)</td>
+                                </tr>
+                                <tr>
+                                    <td>Motor</td>
+                                    <td>Met/Foil/Poly Bopp Etc.</td>
+                                </tr>
+                                <tr>
+                                    <td>Heater Load</td>
+                                    <td>1 kW, 2.2, OVA Single Phase / 50 HZ</td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Dimensions</td>
+                                    <td>750 × 560 × 1750 (mm) (L × W × H)</td>
+                                </tr>
+                                <tr>
+                                    <td>Net Weight</td>
+                                    <td>360 Kilogram</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="product-applications">
+                            <h4>Suitable Applications</h4>
+                            <div class="applications-list">
+                                <span>Powders</span>
+                                <span>Chips</span>
+                                <span>Granules</span>
+                                <span>Tablets</span>
+                                <span>Pharmaceuticals</span>
+                                <span>Candy</span>
+                                <span>Jaleeba Powder</span>
+                                <span>Fish Powder</span>
+                                <span>Kettle Concentrates</span>
+                                <span>Tea</span>
+                                <span>Coffee</span>
+                                <span>Disposable Syringes</span>
+                            </div>
+                        </div>
+
+                        <div class="product-buttons">
+                            <a href="contact.html?product=HT-020" class="btn btn-primary">Request Quote</a>
+                            <a href="contact.html" class="btn btn-outline">Technical Support</a>
+                        </div>
+
+                        <meta itemprop="brand" content="Hi-Tech Enterprises">
+                    </div>
+                </article>
+
+                <!-- Product 2: HT-030 -->
+                <article class="product-detail-card fade-in" id="ht-030" itemscope
+                    itemtype="https://schema.org/Product">
+                    <div class="product-detail-image">
+                        <img src="assets/WhatsApp Image 2026-01-20 at 12.02.36 PM.jpeg"
+                            alt="Hi-Tech HT-030 Automatic Liquid and Paste Packaging Machine" itemprop="image"
+                            loading="lazy">
+                    </div>
+                    <div class="product-detail-content">
+                        <span class="product-model-badge" itemprop="sku">Model HT-030</span>
+                        <h2 class="product-detail-title" itemprop="name">Automatic Liquid & Paste Packaging Machine</h2>
+                        <p class="product-description" itemprop="description">
+                            Convex integrated fully automatic quantitation machine for measuring and bag making,
+                            filling & cutting to packaging. Specifically designed with apparatus suitable to pack
+                            liquids, paste, and semi-solid products with precision control.
+                        </p>
+
+                        <table class="specs-table">
+                            <tbody>
+                                <tr>
+                                    <td>Sealing Type</td>
+                                    <td>3 Side Sealing / 4 Side Sealing / Center Sealing</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Size</td>
+                                    <td>Customizable based on requirements</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Range</td>
+                                    <td>As per product viscosity and flow rate</td>
+                                </tr>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>High-speed production capability</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Material</td>
+                                    <td>Any Heat Sealable Laminated Film (Polyester, Poly Paper, Glassine)</td>
+                                </tr>
+                                <tr>
+                                    <td>Control System</td>
+                                    <td>Automatic Quantitation with Photoelectric Control</td>
+                                </tr>
+                                <tr>
+                                    <td>Optional Features</td>
+                                    <td>Conding Device, Batch Cutting Device, Gas Flushing, Level Sensor</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="product-applications">
+                            <h4>Suitable Applications</h4>
+                            <div class="applications-list">
+                                <span>Liquids</span>
+                                <span>Paste</span>
+                                <span>Jam</span>
+                                <span>Tomato Ketchup</span>
+                                <span>Shampoo</span>
+                                <span>Soya</span>
+                                <span>Milk</span>
+                                <span>Sauce</span>
+                                <span>Oil</span>
+                                <span>Honey</span>
+                                <span>Cream</span>
+                                <span>Gel Products</span>
+                            </div>
+                        </div>
+
+                        <div class="product-buttons">
+                            <a href="contact.html?product=HT-030" class="btn btn-primary">Request Quote</a>
+                            <a href="contact.html" class="btn btn-outline">Technical Support</a>
+                        </div>
+
+                        <meta itemprop="brand" content="Hi-Tech Enterprises">
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Machine Features</span>
+                <h2 class="section-title">Why Our Machines Stand Out</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📦</div>
+                    <h3 class="feature-title">Convenient & Hygienic Packaging</h3>
+                    <p class="feature-description">Ensures hygienic form of packaging with increased shelf life and
+                        better shelf appeal for your products.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Increased Production</h3>
+                    <p class="feature-description">High-speed production with low waste disposal and efficient unit use
+                        of packing materials.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Reduces Shipment Cost</h3>
+                    <p class="feature-description">Optimized packaging reduces shipping costs while maintaining product
+                        integrity.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Simple & Easy to Operate</h3>
+                    <p class="feature-description">User-friendly controls with easy changeover for different pouch
+                        sizes.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Photocell Control System</h3>
+                    <p class="feature-description">Automatically adjust and correct inaccuracy of printing registration
+                        within ± 1.5mm.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Optional Accessories</h3>
+                    <p class="feature-description">Coding device, batch cutting, gas flushing arrangement, and level
+                        sensor available on request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Need a Custom Packaging Solution?</h2>
+            <p>Our team can design and manufacture machines tailored to your specific product and production
+                requirements.</p>
+            <a href="contact.html" class="btn btn-primary">
+                Contact Our Experts
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.JPG" alt="Hi-Tech Enterprises">
+                    <p>Leading manufacturer of automatic form-fill-seal packaging machines. Packing Together Is Our
+                        Business.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1a1a2e" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#ht-020">Model HT-020</a></li>
+                        <li><a href="products.html#ht-030">Model HT-030</a></li>
+                        <li><a href="products.html">All Machines</a></li>
+                        <li><a href="contact.html">Custom Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>D-209, Sector-10, NOIDA - 201301 (U.P.) India</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            <span>Phone: 0120-2555640 | Telefax: 0120-2546833</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M22 7l-10 7L2 7" />
+                            </svg>
+                            <span>hitechnoida@yahoo.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hi-Tech Enterprises. All Rights Reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
