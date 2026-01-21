@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore Hi-Tech Enterprises automatic form-fill-seal packaging machines. Multi Head Weigher, Four Head, Two Head, Cup Fillers, and more. High-quality industrial packaging equipment.">
+        content="Explore Hi-Tech Enterprises automatic form-fill-seal packaging machines. Model HT-020 for powders & granules, HT-030 for liquids & paste. High-quality industrial packaging equipment.">
     <meta name="keywords"
-        content="packaging machines, multi head weigher, four head filler, form fill seal machines, automatic packaging equipment, pouch packaging machines, granule packing, liquid packing, Hi-Tech Enterprises products">
+        content="packaging machines, HT-020, HT-030, form fill seal machines, automatic packaging equipment, pouch packaging machines, granule packing, liquid packing, Hi-Tech Enterprises products">
     <meta name="author" content="Hi-Tech Enterprises">
     <meta name="robots" content="index, follow">
 
@@ -39,10 +39,11 @@
         "@type": "ItemList",
         "name": "Hi-Tech Enterprises Packaging Machines",
         "description": "Automatic form-fill-seal packaging machines for various industries",
-        "numberOfItems": 16,
+        "numberOfItems": 18,
         "itemListElement": [
-            { "@type": "Product", "position": 1, "name": "Multi Head Weigher with Pouch Packing Machine", "sku": "Collar Type Multihead", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
-            { "@type": "Product", "position": 2, "name": "Fully Pneumatic Four Head Packing Machine", "sku": "Collar Type 4-Head", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
+            { "@type": "Product", "position": 1, "name": "Model HT-020 - Automatic Quantization Filling & Packaging Machine", "sku": "HT-020", "brand": { "@type": "Brand", "name": "Hi-Tech Enterprises" } },
+            { "@type": "Product", "position": 2, "name": "Model HT-030 - Automatic Liquid & Paste Packaging Machine", "sku": "HT-030", "brand": { "@type": "Brand", "name": "Hi-Tech Enterprises" } },
+            { "@type": "Product", "position": 3, "name": "Multi Head Weigher with Pouch Packing Machine", "sku": "Collar Type Multihead", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
             { "@type": "Product", "position": 4, "name": "Fully Pneumatic Four Head Packing Machine", "sku": "Collar Type 4-Head", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
             { "@type": "Product", "position": 5, "name": "Fully Pneumatic Two Head Packing Machine", "sku": "Collar Type 2-Head", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
             { "@type": "Product", "position": 6, "name": "Half Pneumatic CUP Filler Packing Machine", "sku": "Half-Pneumatic-Cup", "brand": { "@type": "Brand", "name": "TJB Enterprise" } },
@@ -252,6 +253,167 @@
             <div class="products-page-grid">
 
                 <!-- Product 1: HT-020 -->
+                <article class="product-detail-card fade-in" id="ht-020" itemscope
+                    itemtype="https://schema.org/Product">
+                    <div class="product-detail-image"
+                        style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/products/product-1.PNG"
+                            alt="Hi-Tech HT-020 Automatic Quantization Filling and Packaging Machine" itemprop="image"
+                            loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="product-detail-content">
+                        <span class="product-model-badge" itemprop="sku">Model HT-020</span>
+                        <h2 class="product-detail-title" itemprop="name">Automatic Quantization Filling & Packaging
+                            Machine</h2>
+                        <p class="product-description" itemprop="description">
+                            Convex integrated fully automatic quantization filling and sealing packaging machine.
+                            Conducts integrated operations for measuring, bag making, filling & cutting to packaging
+                            with a photocell control system for accurate web registration.
+                        </p>
+
+                        <table class="specs-table">
+                            <tbody>
+                                <tr>
+                                    <td>Sealing Type</td>
+                                    <td>3 Side Sealing / 4 Side Sealing / Center Sealing (On Request)</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Size</td>
+                                    <td>L: 40-120mm or 100-240mm (Film Length) × W: 20-16mm or 20-220mm (Film Width)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Range</td>
+                                    <td>0.5-30gm, 50-100gm, 100-300gm (Depending on Material Gravity)</td>
+                                </tr>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>60-120 Bag/Min, 45-90 Bag/Min (Depending on Flow Rate)</td>
+                                </tr>
+                                <tr>
+                                    <td>Motor</td>
+                                    <td>Met/Foil/Poly Bopp Etc.</td>
+                                </tr>
+                                <tr>
+                                    <td>Heater Load</td>
+                                    <td>1 kW, 2.2, OVA Single Phase / 50 HZ</td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Dimensions</td>
+                                    <td>750 × 560 × 1750 (mm) (L × W × H)</td>
+                                </tr>
+                                <tr>
+                                    <td>Net Weight</td>
+                                    <td>360 Kilogram</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="product-applications">
+                            <h4>Suitable Applications</h4>
+                            <div class="applications-list">
+                                <span>Powders</span>
+                                <span>Chips</span>
+                                <span>Granules</span>
+                                <span>Tablets</span>
+                                <span>Pharmaceuticals</span>
+                                <span>Candy</span>
+                                <span>Jaleeba Powder</span>
+                                <span>Fish Powder</span>
+                                <span>Kettle Concentrates</span>
+                                <span>Tea</span>
+                                <span>Coffee</span>
+                                <span>Disposable Syringes</span>
+                            </div>
+                        </div>
+
+                        <div class="product-buttons">
+                            <a href="contact.html?product=HT-020" class="btn btn-primary">Request Quote</a>
+                            <a href="contact.html" class="btn btn-outline">Technical Support</a>
+                        </div>
+
+                        <meta itemprop="brand" content="Hi-Tech Enterprises">
+                    </div>
+                </article>
+
+                <!-- Product 2: HT-030 -->
+                <article class="product-detail-card fade-in" id="ht-030" itemscope
+                    itemtype="https://schema.org/Product">
+                    <div class="product-detail-image"
+                        style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; align-items: center; justify-content: center;">
+                        <img src="assets/images/products/product-9.PNG"
+                            alt="Hi-Tech HT-030 Automatic Liquid and Paste Packaging Machine" itemprop="image"
+                            loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="product-detail-content">
+                        <span class="product-model-badge" itemprop="sku">Model HT-030</span>
+                        <h2 class="product-detail-title" itemprop="name">Automatic Liquid & Paste Packaging Machine</h2>
+                        <p class="product-description" itemprop="description">
+                            Convex integrated fully automatic quantitation machine for measuring and bag making,
+                            filling & cutting to packaging. Specifically designed with apparatus suitable to pack
+                            liquids, paste, and semi-solid products with precision control.
+                        </p>
+
+                        <table class="specs-table">
+                            <tbody>
+                                <tr>
+                                    <td>Sealing Type</td>
+                                    <td>3 Side Sealing / 4 Side Sealing / Center Sealing</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Size</td>
+                                    <td>Customizable based on requirements</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Range</td>
+                                    <td>As per product viscosity and flow rate</td>
+                                </tr>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>High-speed production capability</td>
+                                </tr>
+                                <tr>
+                                    <td>Packaging Material</td>
+                                    <td>Any Heat Sealable Laminated Film (Polyester, Poly Paper, Glassine)</td>
+                                </tr>
+                                <tr>
+                                    <td>Control System</td>
+                                    <td>Automatic Quantitation with Photoelectric Control</td>
+                                </tr>
+                                <tr>
+                                    <td>Optional Features</td>
+                                    <td>Conding Device, Batch Cutting Device, Gas Flushing, Level Sensor</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="product-applications">
+                            <h4>Suitable Applications</h4>
+                            <div class="applications-list">
+                                <span>Liquids</span>
+                                <span>Paste</span>
+                                <span>Jam</span>
+                                <span>Tomato Ketchup</span>
+                                <span>Shampoo</span>
+                                <span>Soya</span>
+                                <span>Milk</span>
+                                <span>Sauce</span>
+                                <span>Oil</span>
+                                <span>Honey</span>
+                                <span>Cream</span>
+                                <span>Gel Products</span>
+                            </div>
+                        </div>
+
+                        <div class="product-buttons">
+                            <a href="contact.html?product=HT-030" class="btn btn-primary">Request Quote</a>
+                            <a href="contact.html" class="btn btn-outline">Technical Support</a>
+                        </div>
+
+                        <meta itemprop="brand" content="Hi-Tech Enterprises">
+                    </div>
+                </article>
+
                 <!-- Product 3: Multi Head Weigher with Pouch Packing Machine -->
                 <article class="product-detail-card fade-in" id="multihead-weigher" itemscope
                     itemtype="https://schema.org/Product">
@@ -1243,8 +1405,8 @@
                 <div>
                     <h4 class="footer-title">Products</h4>
                     <ul class="footer-links">
-                        <li><a href="products.html#multihead-weigher">Multi Head Weigher</a></li>
-                        <li><a href="products.html#four-head-packing">Four Head Packing</a></li>
+                        <li><a href="products.html#ht-020">Model HT-020</a></li>
+                        <li><a href="products.html#ht-030">Model HT-030</a></li>
                         <li><a href="products.html">All Machines</a></li>
                         <li><a href="contact.html">Custom Solutions</a></li>
                     </ul>
