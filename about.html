@@ -9,6 +9,12 @@
     <meta name="keywords" content="Hi-Tech Enterprises about, packaging company India, form fill seal manufacturer">
     <title>About Us | Hi-Tech Enterprises</title>
     <link rel="icon" type="image/jpeg" href="assets/hi-tech-logo.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -76,7 +82,11 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto var(--spacing-md);
-            font-size: 2.5rem;
+        }
+
+        .value-icon i {
+            font-size: 2rem;
+            color: var(--white);
         }
 
         .industries-grid {
@@ -102,6 +112,21 @@
         .industry-icon {
             font-size: 2.5rem;
             margin-bottom: var(--spacing-sm);
+        }
+
+        .industry-icon i {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-icon i {
+            font-size: 2.5rem;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         @media (max-width: 768px) {
@@ -154,8 +179,12 @@
                         satisfaction.</p>
                     <p style="color: #6c757d; margin-bottom: var(--spacing-md);">With a focus on automation and
                         precision, our machines are designed to enhance productivity, reduce packaging costs, and ensure
-                        consistent pack quality. Based in Noida, India, we serve customers nationwide and
-                        internationally.
+                        consistent pack quality. We specialize in the design and manufacture of a comprehensive range
+                        including Automatic Pouch Packing Machines, Semi-Automatic Pouch Packing Machines, Vertical Form
+                        Fill Seal (VFFS) Machines, Horizontal Pouch Packing Machines, Liquid Pouch Packing Machines,
+                        Granule Pouch Packing Machines, Powder Pouch Packing Machines, Multi-Lane Pouch Packing
+                        Machines, and Customized Packaging Solutions. Based in <strong>D-209, Sector-10, NOIDA - 201301
+                            (U.P.) India</strong>, we serve customers nationwide and internationally.
                     </p>
                     <div class="about-stats" style="margin-top: var(--spacing-lg);">
                         <div class="stat-item">
@@ -182,19 +211,19 @@
                 <h2 class="section-title">Mission & Vision</h2>
             </div>
             <div class="products-grid" style="margin-top: var(--spacing-lg);">
+                <div class="feature-card fade-in" style="border-left: 4px solid var(--primary-blue);">
+                    <div class="feature-icon"><i class="fas fa-binoculars"></i></div>
+                    <h3 class="feature-title">Our Vision</h3>
+                    <p class="feature-description">To become a globally trusted brand in pouch packaging machinery by
+                        delivering innovative, high-performance, and sustainable packaging solutions.</p>
+                </div>
                 <div class="feature-card fade-in" style="border-left: 4px solid var(--secondary-orange);">
-                    <div class="feature-icon">🎯</div>
+                    <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
                     <h3 class="feature-title">Our Mission</h3>
                     <p class="feature-description">• To manufacture world-class pouch packing machines with superior
                         quality<br>
                         • To continuously innovate using advanced technology<br>
                         • To provide reliable after-sales service and long-term customer support</p>
-                </div>
-                <div class="feature-card fade-in" style="border-left: 4px solid var(--primary-blue);">
-                    <div class="feature-icon">🔭</div>
-                    <h3 class="feature-title">Our Vision</h3>
-                    <p class="feature-description">To become a globally trusted brand in pouch packaging machinery by
-                        delivering innovative, high-performance, and sustainable packaging solutions.</p>
                 </div>
             </div>
         </div>
@@ -207,24 +236,37 @@
             </div>
             <div class="values-grid">
                 <div class="value-card fade-in">
-                    <div class="value-icon">⭐</div>
-                    <h3>Quality Excellence</h3>
-                    <p>Highest standards in manufacturing, ensuring every machine meets rigorous benchmarks.</p>
+                    <div class="value-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>High-Speed & Accurate</h3>
+                    <p>Advanced PLC control system ensures high-speed packing with consistent accuracy and minimal
+                        wastage.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">💡</div>
-                    <h3>Innovation</h3>
-                    <p>Continuous investment in R&D for latest technology and innovations.</p>
+                    <div class="value-icon"><i class="fas fa-building"></i></div>
+                    <h3>Robust & Durable</h3>
+                    <p>Robust construction and long service life with strict quality control at every manufacturing
+                        stage.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">🤝</div>
-                    <h3>Customer Focus</h3>
-                    <p>Customers at the heart of everything we do. We deliver beyond expectations.</p>
+                    <div class="value-icon"><i class="fas fa-user-cog"></i></div>
+                    <h3>User-Friendly Operation</h3>
+                    <p>Easy operation, simple changeover, and low maintenance requirements for maximum productivity.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">✅</div>
-                    <h3>Integrity</h3>
-                    <p>Business with honesty and transparency, building trust with customers and partners.</p>
+                    <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Energy Efficient</h3>
+                    <p>Energy-efficient design reduces operational costs while maintaining high performance standards.
+                    </p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Customization Available</h3>
+                    <p>Customized packaging solutions tailored to your specific production requirements.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <h3>Compliance & Standards</h3>
+                    <p>Compliance with international quality standards ensuring flawless performance and safety.</p>
                 </div>
             </div>
         </div>
@@ -237,35 +279,35 @@
             </div>
             <div class="industries-grid fade-in">
                 <div class="industry-item">
-                    <div class="industry-icon">🍪</div>
+                    <div class="industry-icon"><i class="fas fa-cookie-bite"></i></div>
                     <h4>Food & Beverages</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">💊</div>
+                    <div class="industry-icon"><i class="fas fa-pills"></i></div>
                     <h4>Pharmaceuticals</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">🛒</div>
+                    <div class="industry-icon"><i class="fas fa-shopping-cart"></i></div>
                     <h4>FMCG</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">🧴</div>
+                    <div class="industry-icon"><i class="fas fa-pump-soap"></i></div>
                     <h4>Cosmetics & Personal Care</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">⚗️</div>
+                    <div class="industry-icon"><i class="fas fa-flask"></i></div>
                     <h4>Chemicals & Agro</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">🥛</div>
+                    <div class="industry-icon"><i class="fas fa-glass-whiskey"></i></div>
                     <h4>Dairy & Edible Oils</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">🧂</div>
+                    <div class="industry-icon"><i class="fas fa-pepper-hot"></i></div>
                     <h4>Spices</h4>
                 </div>
                 <div class="industry-item">
-                    <div class="industry-icon">☕</div>
+                    <div class="industry-icon"><i class="fas fa-mug-hot"></i></div>
                     <h4>Tea & Coffee</h4>
                 </div>
             </div>
@@ -281,33 +323,33 @@
             </div>
             <div class="values-grid">
                 <div class="value-card fade-in">
-                    <div class="value-icon">🏭</div>
+                    <div class="value-icon"><i class="fas fa-industry"></i></div>
                     <h3>Advanced Manufacturing</h3>
                     <p>State-of-the-art manufacturing facility equipped with modern CNC machines and testing facilities.
                     </p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">👨‍🔧</div>
+                    <div class="value-icon"><i class="fas fa-hard-hat"></i></div>
                     <h3>Experienced Team</h3>
                     <p>Highly skilled engineering team with decades of combined experience in packaging machinery.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">✅</div>
+                    <div class="value-icon"><i class="fas fa-check-circle"></i></div>
                     <h3>Strict Quality Control</h3>
                     <p>Rigorous quality checks at every stage ensuring flawless performance, safety, and durability.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">🎨</div>
+                    <div class="value-icon"><i class="fas fa-palette"></i></div>
                     <h3>Customization</h3>
                     <p>Machines customized as per client requirements to meet specific production needs.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">⏰</div>
+                    <div class="value-icon"><i class="fas fa-clock"></i></div>
                     <h3>Timely Delivery</h3>
                     <p>Commitment to on-time delivery with competitive pricing and transparent communication.</p>
                 </div>
                 <div class="value-card fade-in">
-                    <div class="value-icon">🛠️</div>
+                    <div class="value-icon"><i class="fas fa-tools"></i></div>
                     <h3>After-Sales Support</h3>
                     <p>Comprehensive after-sales service including installation, training, maintenance, and spare parts.
                     </p>
@@ -321,7 +363,7 @@
         <div class="container">
             <div class="products-grid" style="margin-top: var(--spacing-lg);">
                 <div class="feature-card fade-in" style="border-left: 4px solid var(--secondary-orange);">
-                    <div class="feature-icon">🏆</div>
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
                     <h3 class="feature-title">Quality Assurance</h3>
                     <p class="feature-description">Quality is the foundation of our operations. All machines undergo
                         stringent quality checks to ensure flawless performance, safety, and durability. We follow
@@ -329,7 +371,7 @@
                         customer expectations.</p>
                 </div>
                 <div class="feature-card fade-in" style="border-left: 4px solid var(--primary-blue);">
-                    <div class="feature-icon">🏗️</div>
+                    <div class="feature-icon"><i class="fas fa-building"></i></div>
                     <h3 class="feature-title">Infrastructure</h3>
                     <p class="feature-description">Our state-of-the-art manufacturing unit is equipped with advanced CNC
                         machines, modern testing facilities, and a dedicated R&D department to support continuous
@@ -350,27 +392,27 @@
             </div>
             <div class="industries-grid fade-in">
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">🔧</div>
+                    <div class="industry-icon"><i class="fas fa-wrench"></i></div>
                     <h4>Installation & Commissioning</h4>
                 </div>
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">👨‍🏫</div>
+                    <div class="industry-icon"><i class="fas fa-chalkboard-teacher"></i></div>
                     <h4>Operator Training</h4>
                 </div>
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">🔩</div>
+                    <div class="industry-icon"><i class="fas fa-cogs"></i></div>
                     <h4>Spare Parts Support</h4>
                 </div>
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">📞</div>
+                    <div class="industry-icon"><i class="fas fa-phone-alt"></i></div>
                     <h4>Technical Assistance</h4>
                 </div>
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">🛠️</div>
+                    <div class="industry-icon"><i class="fas fa-tools"></i></div>
                     <h4>Maintenance Services</h4>
                 </div>
                 <div class="industry-item" style="padding: var(--spacing-lg);">
-                    <div class="industry-icon">💬</div>
+                    <div class="industry-icon"><i class="fas fa-comments"></i></div>
                     <h4>24/7 Support</h4>
                 </div>
             </div>
@@ -385,7 +427,8 @@
             <div
                 style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap; margin-top: var(--spacing-md);">
                 <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-                <a href="tel:+919891017791" class="btn btn-secondary">📞 Call: +91-9891017791</a>
+                <a href="tel:+919891017791" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call:
+                    +91-9891017791</a>
             </div>
         </div>
     </section>
