@@ -3,7 +3,7 @@
    Interactive Features & Functionality
    =================================== */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize all modules
     initNavigation();
     initSmoothScroll();
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initCounters();
     initHeaderScroll();
     initFormValidation();
+    initDescriptionToggle();
 });
 
 /* === Navigation === */
@@ -62,10 +63,10 @@ function initNavigation() {
 /* === Smooth Scroll === */
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href === '#') return;
-            
+
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
@@ -85,7 +86,7 @@ function initSmoothScroll() {
 /* === Scroll Animations === */
 function initScrollAnimations() {
     const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
-    
+
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -106,7 +107,7 @@ function initScrollAnimations() {
 /* === Counter Animation === */
 function initCounters() {
     const counters = document.querySelectorAll('.stat-number[data-count]');
-    
+
     const observerOptions = {
         threshold: 0.5
     };
@@ -148,7 +149,7 @@ function initHeaderScroll() {
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll > 50) {
             header.classList.add('scrolled');
         } else {
@@ -162,17 +163,17 @@ function initHeaderScroll() {
 /* === Form Validation === */
 function initFormValidation() {
     const form = document.querySelector('.contact-form form');
-    
+
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             let isValid = true;
             const inputs = form.querySelectorAll('input[required], textarea[required]');
-            
+
             inputs.forEach(input => {
                 removeError(input);
-                
+
                 if (!input.value.trim()) {
                     showError(input, 'This field is required');
                     isValid = false;
@@ -232,7 +233,7 @@ function showSuccessMessage(form) {
 /* === Parallax Effect === */
 function initParallax() {
     const parallaxElements = document.querySelectorAll('.parallax');
-    
+
     window.addEventListener('scroll', () => {
         parallaxElements.forEach(el => {
             const speed = el.getAttribute('data-speed') || 0.5;
@@ -245,7 +246,7 @@ function initParallax() {
 /* === Lazy Loading Images === */
 function initLazyLoad() {
     const images = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -263,12 +264,12 @@ function initLazyLoad() {
 /* === Typing Effect === */
 function initTypingEffect() {
     const typingElements = document.querySelectorAll('.typing-effect');
-    
+
     typingElements.forEach(el => {
         const text = el.textContent;
         el.textContent = '';
         let i = 0;
-        
+
         function type() {
             if (i < text.length) {
                 el.textContent += text.charAt(i);
@@ -276,7 +277,29 @@ function initTypingEffect() {
                 setTimeout(type, 100);
             }
         }
-        
+
         type();
+    });
+}
+/* === Description Toggle === */
+function initDescriptionToggle() {
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const container = this.closest('.product-description-container');
+            const description = container.querySelector('.product-description');
+
+            description.classList.toggle('collapsed');
+            this.classList.toggle('active');
+
+            if (description.classList.contains('collapsed')) {
+                this.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
+                // Scroll back to top of container if needed
+                container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                this.innerHTML = 'Read Less <i class="fas fa-chevron-up"></i>';
+            }
+        });
     });
 }
