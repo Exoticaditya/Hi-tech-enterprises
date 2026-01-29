@@ -159,7 +159,7 @@ h6 {
 }
 
 .logo img {
-    height: 70px;
+    height: 100px;
     width: auto;
 }
 
@@ -606,6 +606,16 @@ h6 {
 .hero-badge,
 .section-badge {
     animation: pulse-glow 3s infinite;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
 }
 
 /* === Section Styles === */
