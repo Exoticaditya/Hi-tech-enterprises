@@ -294,11 +294,11 @@ function initDescriptionToggle() {
             this.classList.toggle('active');
 
             if (description.classList.contains('collapsed')) {
-                this.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
+                this.innerHTML = 'Explore Details <i class="fas fa-chevron-down"></i>';
                 // Scroll back to top of container if needed
                 container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             } else {
-                this.innerHTML = 'Read Less <i class="fas fa-chevron-up"></i>';
+                this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
             }
         });
     });
