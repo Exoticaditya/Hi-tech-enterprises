@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /assets/css/
-Disallow: /assets/js/
 Disallow: /tmp/
 
 Sitemap: https://hi-tech-enterprises.com/sitemap.xml

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initHeaderScroll();
     initFormValidation();
     initDescriptionToggle();
+    initProductFilters();
 });
 
 /* === Navigation === */
@@ -160,7 +161,7 @@ function initHeaderScroll() {
     });
 }
 
-/* === Form Validation === */
+/* === Form Validation & EmailJS === */
 function initFormValidation() {
     const form = document.querySelector('.contact-form form');
 
@@ -170,6 +171,7 @@ function initFormValidation() {
 
             let isValid = true;
             const inputs = form.querySelectorAll('input[required], textarea[required]');
+            const submitBtn = form.querySelector('button[type="submit"]');
 
             inputs.forEach(input => {
                 removeError(input);
@@ -187,8 +189,21 @@ function initFormValidation() {
             });
 
             if (isValid) {
-                // Show success message
-                showSuccessMessage(form);
+                // Show loading state
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+
+                // Send via EmailJS
+                // WARNING: You must replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' 
+                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+                    .then(function () {
+                        showSuccessMessage(form);
+                    }, function (error) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                        alert('Failed to send message: ' + JSON.stringify(error));
+                    });
             }
         });
     }
@@ -290,16 +305,75 @@ function initDescriptionToggle() {
             const container = this.closest('.product-description-container');
             const description = container.querySelector('.product-description');
 
+            if (!container || !description) return;
+
             description.classList.toggle('collapsed');
             this.classList.toggle('active');
 
             if (description.classList.contains('collapsed')) {
                 this.innerHTML = 'Explore Details <i class="fas fa-chevron-down"></i>';
-                // Scroll back to top of container if needed
                 container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             } else {
                 this.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
             }
         });
     });
+}
+
+/* === Product Filters & Search === */
+function initProductFilters() {
+    const filterBtns = document.querySelectorAll('.filter-buttons .btn');
+    const searchInput = document.getElementById('productSearch');
+    const productCards = document.querySelectorAll('.product-detail-card');
+
+    // Filter Buttons
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active state
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+                filterProducts(filterValue, searchInput ? searchInput.value : '');
+            });
+        });
+    }
+
+    // Search Input
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const activeBtn = document.querySelector('.filter-buttons .btn.active');
+            const filterValue = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+            filterProducts(filterValue, e.target.value);
+        });
+    }
+
+    function filterProducts(category, searchTerm) {
+        searchTerm = searchTerm.toLowerCase();
+
+        productCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category') || '';
+            const title = card.querySelector('.product-detail-title').textContent.toLowerCase();
+            const model = card.querySelector('.product-model-badge').textContent.toLowerCase();
+            const desc = card.querySelector('.product-description').textContent.toLowerCase();
+
+            const matchesCategory = category === 'all' || cardCategory.includes(category);
+            const matchesSearch = title.includes(searchTerm) || model.includes(searchTerm) || desc.includes(searchTerm);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = 'grid'; // Maintain grid layout
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 50);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
 }
