@@ -263,9 +263,25 @@
             </div>
 
             <div class="products-page-grid">
+                <!-- Product Filtering & Search -->
+                <div class="product-controls glass-panel"
+                    style="padding: 20px; margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center; grid-column: 1 / -1;">
+                    <div class="filter-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button class="btn btn-outline active" data-filter="all">All</button>
+                        <button class="btn btn-outline" data-filter="powder">Powder/Granule</button>
+                        <button class="btn btn-outline" data-filter="liquid">Liquid/Paste</button>
+                        <button class="btn btn-outline" data-filter="ffs">FFS Series</button>
+                    </div>
+                    <div class="search-box" style="position: relative; min-width: 250px;">
+                        <input type="text" id="productSearch" placeholder="Search machines..."
+                            style="width: 100%; padding: 10px 40px 10px 15px; border-radius: 20px; border: 1px solid #ddd;">
+                        <i class="fas fa-search"
+                            style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: #666;"></i>
+                    </div>
+                </div>
                 <!-- Product 1: HT-010 Multihead Weigher -->
-                <article class="product-detail-card fade-in" id="ht-010" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-010" itemscope itemtype="https://schema.org/Product"
+                    data-category="ffs powder">
                     <div class="product-detail-image"
                         style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; align-items: center; justify-content: center;">
                         <img src="assets/images/products/ht010.png" alt="Collar Type Multihead Weigher Machine HT-010"
@@ -335,11 +351,11 @@
                 </article>
 
                 <!-- Product 2: HT-011 Fully Pneumatic Cup Filler -->
-                <article class="product-detail-card fade-in" id="ht-011" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-011" itemscope itemtype="https://schema.org/Product"
+                    data-category="powder">
                     <div class="product-detail-image"
                         style="background: #ffffff; display: flex; align-items: center; justify-content: center;">
-                        <img src="assets/images/products/ht011.jpeg" alt="Fully Pneumatic Cup Filler Machine HT-011"
+                        <img src="assets/images/products/ht011-new.png" alt="Fully Pneumatic Cup Filler Machine HT-011"
                             itemprop="image" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <div class="product-detail-content">
@@ -406,8 +422,8 @@
                 </article>
 
                 <!-- Product 3: HT-012 Auger Filler -->
-                <article class="product-detail-card fade-in" id="ht-012" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-012" itemscope itemtype="https://schema.org/Product"
+                    data-category="powder">
                     <div class="product-detail-image"
                         style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); display: flex; align-items: center; justify-content: center;">
                         <img src="assets/images/products/ht012.jpeg" alt="Auger Filler Pneumatic Machine HT-012"
@@ -477,11 +493,11 @@
                 </article>
 
                 <!-- Product 4: HT-014 Half Pneumatic Cup Filler -->
-                <article class="product-detail-card fade-in" id="ht-014" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-014" itemscope itemtype="https://schema.org/Product"
+                    data-category="powder">
                     <div class="product-detail-image"
                         style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #ffffff; padding: 10px;">
-                        <img src="assets/images/products/ht014.jpeg"
+                        <img src="assets/images/products/ht014-new.png"
                             alt="Half Pneumatic Cup Filler Machine HT-014 Front" itemprop="image" loading="lazy"
                             style="width: 100%; height: 100%; object-fit: contain;">
                         <img src="assets/images/products/ht014_2.jpeg"
@@ -551,8 +567,8 @@
                 </article>
 
                 <!-- Product 5: HT-015 Automatic FFS Machine -->
-                <article class="product-detail-card fade-in" id="ht-015" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-015" itemscope itemtype="https://schema.org/Product"
+                    data-category="ffs powder">
                     <div class="product-detail-image"
                         style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 10px;">
                         <img src="assets/images/products/ht015.png" alt="Automatic Form Fill Seal Machine HT-015"
@@ -624,8 +640,8 @@
                 </article>
 
                 <!-- Product 6: HT-016 Liquid FFS Machine -->
-                <article class="product-detail-card fade-in" id="ht-016" itemscope
-                    itemtype="https://schema.org/Product">
+                <article class="product-detail-card fade-in" id="ht-016" itemscope itemtype="https://schema.org/Product"
+                    data-category="ffs liquid">
                     <div class="product-detail-image"
                         style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 10px;">
                         <img src="assets/images/products/ht016.jpeg" alt="Automatic Liquid FFS Machine HT-016"
