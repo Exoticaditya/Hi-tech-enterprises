@@ -127,6 +127,12 @@
         font-size: 2rem;
     }
 
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.75rem;
+        white-space: nowrap;
+    }
+
     .hero-image img {
         max-width: 80%;
         margin: 0 auto;

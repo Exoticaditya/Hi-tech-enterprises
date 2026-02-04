@@ -365,7 +365,8 @@ h6 {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--secondary-orange);
+    color: var(--white);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-xl);
     font-size: 0.875rem;
