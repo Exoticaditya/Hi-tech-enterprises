@@ -179,7 +179,7 @@ function initFormValidation() {
                 if (!input.value.trim()) {
                     showError(input, 'This field is required');
                     isValid = false;
-                } else if (input.type === 'email' && !isValidEmail(input.value)) {
+                } else if ((input.type === 'email' || input.name === 'from_email') && !isValidEmail(input.value)) {
                     showError(input, 'Please enter a valid email address');
                     isValid = false;
                 } else if (input.type === 'tel' && !isValidPhone(input.value)) {
@@ -196,12 +196,14 @@ function initFormValidation() {
 
                 // Send via EmailJS
                 emailjs.sendForm('service_jclkaxz', 'template_nz65p3h', form)
-                    .then(function () {
+                    .then(function (response) {
+                        console.log('EmailJS Success:', response.status, response.text);
                         showSuccessMessage(form);
                     }, function (error) {
+                        console.error('EmailJS Error:', error);
                         submitBtn.disabled = false;
                         submitBtn.innerHTML = originalBtnText;
-                        alert('Failed to send message: ' + JSON.stringify(error));
+                        alert('Failed to send message. Please try again or contact us directly at hitechnoida@yahoo.com. Error: ' + (error.text || JSON.stringify(error)));
                     });
             }
         });
