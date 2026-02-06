@@ -179,7 +179,7 @@ function initFormValidation() {
                 if (!input.value.trim()) {
                     showError(input, 'This field is required');
                     isValid = false;
-                } else if ((input.type === 'email' || input.name === 'from_email') && !isValidEmail(input.value)) {
+                } else if (input.type === 'email' && !isValidEmail(input.value)) {
                     showError(input, 'Please enter a valid email address');
                     isValid = false;
                 } else if (input.type === 'tel' && !isValidPhone(input.value)) {
