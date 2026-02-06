@@ -195,8 +195,7 @@ function initFormValidation() {
                 submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
 
                 // Send via EmailJS
-                // WARNING: You must replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' 
-                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+                emailjs.sendForm('service_jclkaxz', 'template_nz65p3h', form)
                     .then(function () {
                         showSuccessMessage(form);
                     }, function (error) {
