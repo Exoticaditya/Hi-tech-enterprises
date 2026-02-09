@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initFormValidation();
     initDescriptionToggle();
     initProductFilters();
+    checkFormStatus();
 });
 
 /* === Navigation === */
@@ -194,19 +195,20 @@ function initFormValidation() {
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
 
-                // Send via EmailJS
-                emailjs.sendForm('service_jclkaxz', 'template_nz65p3h', form)
-                    .then(function (response) {
-                        console.log('EmailJS Success:', response.status, response.text);
-                        showSuccessMessage(form);
-                    }, function (error) {
-                        console.error('EmailJS Error:', error);
-                        submitBtn.disabled = false;
-                        submitBtn.innerHTML = originalBtnText;
-                        alert('Failed to send message. Please try again or contact us directly at hitechnoida@yahoo.com. Error: ' + (error.text || JSON.stringify(error)));
-                    });
+                // Allow standard form submission to FormSubmit.co
+                form.submit();
             }
         });
+    }
+}
+
+function checkFormStatus() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('status') === 'success') {
+        const form = document.querySelector('.contact-form form');
+        if (form) {
+            showSuccessMessage(form);
+        }
     }
 }
 

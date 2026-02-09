@@ -136,13 +136,7 @@
             }
         }
     </style>
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("bUJuDZkgT2NMbwhEj");
-        })();
-    </script>
+    <!-- EmailJS SDK REMOVED -->
 </head>
 
 <body>
@@ -226,7 +220,14 @@
 
                 <div class="contact-form fade-in">
                     <h3 style="margin-bottom: var(--spacing-md); color: var(--primary-dark);">Send Us a Message</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formsubmit.co/hitechnoida@yahoo.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Inquiry from Hi-Tech Enterprises Website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://pouchpackagingmachinery.in/contact.html?status=success">
+
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -287,6 +288,10 @@
                 <div class="footer-brand"><img src="assets/hi-tech-logo.png" alt="Hi-Tech Enterprises">
                     <p>Leading manufacturer of automatic form-fill-seal packaging machines. Packing Together Is Our
                         Business.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/1AhgPGvNXP/?mibextid=wwXIfr" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
